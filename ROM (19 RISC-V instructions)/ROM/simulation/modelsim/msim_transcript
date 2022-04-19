@@ -1,0 +1,49 @@
+# Reading pref.tcl
+# do ROM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/ROM {C:/intelFPGA_lite/ROM/ROM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:19:57 on Apr 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/ROM" C:/intelFPGA_lite/ROM/ROM.v 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 14:19:57 on Apr 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/ROM {C:/intelFPGA_lite/ROM/ROM_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:19:57 on Apr 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/ROM" C:/intelFPGA_lite/ROM/ROM_testbench.v 
+# -- Compiling module ROM_testbench
+# 
+# Top level modules:
+# 	ROM_testbench
+# End time: 14:19:57 on Apr 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  ROM_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" ROM_testbench 
+# Start time: 14:19:57 on Apr 19,2022
+# Loading work.ROM_testbench
+# Loading work.ROM
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/intelFPGA_lite/ROM/ROM_testbench.v(26)
+#    Time: 240 ps  Iteration: 0  Instance: /ROM_testbench
+# Break in Module ROM_testbench at C:/intelFPGA_lite/ROM/ROM_testbench.v line 26
